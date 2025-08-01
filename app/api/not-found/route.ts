@@ -1,5 +1,5 @@
-import { apiErrors } from '@/lib/apiErrors';
+import { apiResponses } from '@/lib/apiResponses';
 
 export async function GET(request: Request) { 
-  return apiErrors.notFound();
+  return apiResponses.notFound();
 }

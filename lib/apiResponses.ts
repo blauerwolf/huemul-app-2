@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-export const apiErrors = {
+export const apiResponses = {
     notFound: () => {
         return NextResponse.json({
             success: false,
