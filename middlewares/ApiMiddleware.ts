@@ -1,9 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { VALID_API_ROUTES } from '@/lib/apiRoutes';
 
-export const VALID_API_ROUTES = [
-    '/api/not-found',
-    '/api/version',
-];
 
 export function apiMiddleware(request: NextRequest) {
     const { pathname } = request.nextUrl;
