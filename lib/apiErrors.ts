@@ -31,9 +31,9 @@ export const apiErrors = {
             message: 'Acceso no permitido',
         }, { status: 403 });
     },
-    custom: (message: string, status = 400) => {
+    custom: (message: string, success = false, status = 400) => {
         return NextResponse.json({
-            success: false,
+            success: success,
             message: message,
         }, { status: status } );
     }
